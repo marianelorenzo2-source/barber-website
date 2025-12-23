@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fresh Cut Barbershop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Fresh Cut Barbershop</h1>
+    <p>Your Style, Our Passion</p>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#barbers">Barbers</a>
+    <a href="#appointment">Book Appointment</a>
+    <a href="#preferences">Client Preferences</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Haircut – ₱100</li>
+        <li>Beard Trim – ₱50</li>
+        <li>Haircut + Beard – ₱140</li>
+    </ul>
+</section>
+
+<section id="barbers">
+    <h2>Meet Our Barbers</h2>
+    <p>Kuya Mark – Fade Specialist</p>
+    <p>Kuya John – Classic Cuts</p>
+</section>
+
+<section id="appointment">
+    <h2>Book an Appointment</h2>
+    <form>
+        <label>Name:</label><br>
+        <input type="text" required><br><br>
+
+        <label>Service:</label><br>
+        <select>
+            <option>Haircut</option>
+            <option>Beard Trim</option>
+            <option>Haircut + Beard</option>
+        </select><br><br>
+
+        <label>Date:</label><br>
+        <input type="date" required><br><br>
+
+        <label>Time:</label><br>
+        <input type="time" required><br><br>
+
+        <button type="submit">Book Now</button>
+    </form>
+</section>
+
+<section id="preferences">
+    <h2>Client Preference Record</h2>
+    <form>
+        <label>Client Name:</label><br>
+        <input type="text"><br><br>
+
+        <label>Preferred Haircut:</label><br>
+        <input type="text"><br><br>
+
+        <label>Preferred Barber:</label><br>
+        <input type="text"><br><br>
+
+        <label>Notes:</label><br>
+        <textarea rows="3"></textarea><br><br>
+
+        <button>Save Record</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 San Mariano, Isabela</p>
+    <p>📞 0936-845-6870</p>
+    <p>📧 <a href="mailto:lovelyvidal1129@gmail.com">lovelyvidal1129@gmail.com</a></p>
+    <p>📱 Scan QR Code to Visit Our Website:</p>
+    <img src="qr-placeholder.png" alt="QR Code" width="150">
+</section>
+
+<footer>
+    <p>© 2025 Fresh Cut Barbershop</p>
+</footer>
+
+</body>
+</html>
+          /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    background: white;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Form Styles */
+input, select, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    section {
+        margin: 10px;
+    }
+}
